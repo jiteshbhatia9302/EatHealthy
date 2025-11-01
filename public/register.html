@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register - Healthy Diet Restaurant</title>
+<style>
+/* === Overall Page Styling === */
+body {
+    margin: 0;
+    font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* === Container Card === */
+.container {
+    background: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    padding: 40px 50px;
+    text-align: center;
+    width: 360px;
+    animation: fadeIn 0.8s ease;
+}
+
+/* === Header Bar (optional, same as login) === */
+.restaurant-header {
+    background: linear-gradient(to right, #00bcd4, #0097a7);
+    color: white;
+    padding: 18px 0;
+    margin: -40px -50px 30px -50px;
+    border-radius: 16px 16px 0 0;
+    font-size: 26px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+/* === Section Heading === */
+h2 {
+    color: #00796b;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* === Input Fields === */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #00acc1;
+    box-shadow: 0 0 5px rgba(0,188,212,0.5);
+    outline: none;
+}
+
+/* === Button === */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00bcd4;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0097a7;
+}
+
+/* === Links === */
+a {
+    color: #00796b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* === Message Placeholder === */
+#msg {
+    margin-top: 15px;
+    color: #00796b;
+    font-weight: 500;
+}
+
+/* === Animation === */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+<main class="container">
+    <h1 class="restaurant-header">Healthy Diet Restaurant</h1>
+    <h2>Register</h2>
+    <form method="post" action="/register">
+        <input name="name" placeholder="Name" required><br>
+        <input name="email" placeholder="Email" type="email" required><br>
+        <input name="password" placeholder="Password" type="password" required><br>
+        <button type="submit">Register (Get 10 credits)</button>
+    </form>
+    <p>Already have an account? <a href="/login.html">Login</a></p>
+    <div id="msg"></div>
+</main>
+</body>
+</html>

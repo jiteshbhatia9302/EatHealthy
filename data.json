@@ -1,0 +1,42 @@
+{
+  "users": [],
+  "orders": [],
+  "menu": [
+    {
+      "id": "h1",
+      "name": "Oats",
+      "price": 250,
+      "type": "healthy"
+    },
+    {
+      "id": "h2",
+      "name": "Poha",
+      "price": 220,
+      "type": "healthy"
+    },
+    {
+      "id": "h3",
+      "name": "Fruit Smoothie",
+      "price": 150,
+      "type": "healthy"
+    },
+    {
+      "id": "j1",
+      "name": "Cheesy Burger",
+      "price": 180,
+      "type": "junk"
+    },
+    {
+      "id": "j2",
+      "name": "Fries Large",
+      "price": 120,
+      "type": "junk"
+    },
+    {
+      "id": "j3",
+      "name": "Chocolate Shake",
+      "price": 160,
+      "type": "junk"
+    }
+  ]
+}
