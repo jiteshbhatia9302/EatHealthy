@@ -69,12 +69,12 @@ const e=req.session.email;
 data = readData();
 const user = data.users.find(u => u.email === e);
 if(!user){
-res.redirect("/login.html");
+return res.redirect("/login.html");
 }
 else{
 	req.session.order=true;
 	const p=user.password;
-	const response = await fetch("/login", {
+	const response = await fetch("https://eathealthy.onrender.com/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email: e, password:p })
